@@ -1,0 +1,42 @@
+.landing{
+    padding-top: 90px;
+}
+.landing img {
+    opacity: .7;
+}
+.landing .row {
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.3), 0 9px 26px 0 rgba(0, 0, 0, 0.3);
+    padding: 15px;
+
+}
+.dropdown-toggle {
+    background-color: #635829;
+    border: none;
+}
+.dropdown-toggle:hover,
+.dropdown-toggle:focus {
+    background-color: #a7964e;
+    box-shadow: none;
+    color: #333;
+}
+.dropdown-item {
+    color: black !important;
+}
+table{
+    padding: 5px;
+    font-size: 20px;
+}
+.table-active{
+    color: white;
+}
+table .role{
+    color: #d1b84c;
+    font-weight: bold;
+}
+table .data{
+    color: white;
+}
+table .prefix{
+    color: #d1b84c;
+    
+}

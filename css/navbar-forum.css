@@ -1,0 +1,31 @@
+/*_______________________________________Nav-bar */
+/* .navbar {
+    background-color: #0a4275;
+} */
+/* .navbar li {
+    padding: 5px;
+} */
+.navbar a{
+    color: white;
+    font-size: 16px;
+}
+.navbar a.active{
+    color: #ff3150;
+}
+.navbar a:hover{
+    color: #ff3150;
+}
+.nav-link:focus {
+    color: white;
+}
+.navbar-brand img{
+    width: 60px;
+}
+.navbar .icon {
+    color: white;
+    font-size: 30px;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+/*_______________________________________Nav-bar */

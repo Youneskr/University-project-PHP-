@@ -1,0 +1,267 @@
+@font-face {
+    font-family: "Kautiva"; 
+    src: url("//db.onlinewebfonts.com/t/858c3faaf3a3473d594d089a39b9dfc5.eot"); 
+    src:url("//db.onlinewebfonts.com/t/858c3faaf3a3473d594d089a39b9dfc5.eot?#iefix") format("embedded-opentype"), 
+        url("//db.onlinewebfonts.com/t/858c3faaf3a3473d594d089a39b9dfc5.woff2") format("woff2"), 
+        url("//db.onlinewebfonts.com/t/858c3faaf3a3473d594d089a39b9dfc5.woff") format("woff"), 
+        url("//db.onlinewebfonts.com/t/858c3faaf3a3473d594d089a39b9dfc5.ttf") format("truetype"), 
+        url("//db.onlinewebfonts.com/t/858c3faaf3a3473d594d089a39b9dfc5.svg#Kautiva") format("svg"); 
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+/*_____________________________background */
+    .background{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    .video-wrap{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }.video-wrap video{
+        min-width: 100%;
+        min-height: 100%;
+    }
+    .overlay {
+        width: 100%;
+        height: 100%;
+        background-color: #10121a;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: .6;
+    }
+/*_____________________________background */
+
+
+/*_____________________________Main */
+    main{
+        position: relative;
+        z-index: 1;
+        color: aliceblue;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    
+
+    /*_______________________________________Landing */
+        .landing{
+            padding-top: 180px;
+        }
+        .landing .bienvenu{
+            color: #E0CD2B;
+            font-size: 70px;
+        }
+        .landing .btn {
+            background-color: #E0CD2B;
+        }
+        .btn:focus {
+            box-shadow : 0 0 0 0.25rem #686862;
+        }
+    /*_______________________________________Landing */
+
+/*_____________________________Main */
+
+
+/*_____________________________Formation */
+.main-title::after {
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 2px;
+    bottom: -20px;
+    left : 50%;
+    transform: translateX(-50%);
+    background-color: #27d1cc;
+}
+@media(max-width: 767px){
+    .main-title::after{
+        display: none;
+    }
+}
+/*_____________________________Formation */
+
+
+/*_____________________________Club */
+    .tunivision {
+        font-family: 'Kautiva' !important;
+    }
+    .carousel-item {
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        z-index: 1;
+    }
+    .carousel-item .container {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50% , -50%);
+        text-align: center;
+    }
+    
+    .carousel-item::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: black;
+        opacity: .7;
+    }
+    .carousel-item h2 {
+        font-size: 80px;
+        color: white;
+        margin-bottom: 20px;
+    }
+    .carousel-item.active h2{
+        animation: fadeInLeft 0.5s ease forwards;
+    }
+    @keyframes fadeInLeft{
+        0% {
+            opacity: 0;
+            transform: translateX(-30px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    .carousel-item.active .social-media {
+        animation: fadeInRight 0.5s ease forwards;
+    }
+    @keyframes fadeInRight{
+        0%{
+            opacity: 0;
+            transform: translateX(30px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    .carousel-controls{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 40px;
+        z-index: 55;
+    }
+    .carousel-controls .carousel-indicators{
+        position: relative;
+        margin: 0;
+    }
+    .carousel-controls .carousel-indicators button {
+        height: 70px;
+        width: 70px;
+        margin: 0 5px;
+        border-radius: 50%;
+        background-position: center;
+        background-size: cover;
+        border: 3px solid transparent;
+        transition: all .3s ease;
+    }
+    
+    .carousel-controls .carousel-indicators button.active{
+        border: 3px solid #E0CD2B;
+        transform: scale(1.2);
+    }
+    .carousel-control-next, 
+    .carousel-control-prev{
+        height: 60px;
+        width: 60px;
+        opacity: 1;
+        z-index: 3;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        transition: all 0.3s ease;
+    }
+    .carousel-control-next:hover, 
+    .carousel-control-prev:hover{
+        box-shadow: 0 0 10px #ffffff;
+    }
+    .carousel-control-next img, 
+    .carousel-control-prev img{
+        width: 30px;
+    }
+    .carousel-control-next{
+        right: -90px;
+    }
+    .carousel-control-prev{
+        left: -90px;
+    }
+    @media(max-width: 767px){
+        .carousel-controls .carousel-indicators button{
+            height: 60px;
+            width: 60px;
+        }
+        .carousel-item h2{
+            font-size: 45px;
+        }
+    }
+/*_____________________________Club */
+
+
+/*_____________________________Forum */
+#forum{
+    padding: 40px 0 0 0;
+    /* height: 100px; */
+    background-color: #0a4275;
+}
+.login-form{
+    padding: 5%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btnSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+}
+.login-form .btnSubmit{
+    font-weight: 600;
+    background-color: #E0CD2B;
+}
+
+.form-control:focus {
+	box-shadow: 0 0 0 0.25rem rgb(224 205 43 / 26%);
+	border-color: transparent;
+}
+#forum-clic {
+    display: none;
+}
+/*_____________________________Forum */
+
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #E0CD2B; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px;
+    font-size: 30px;
+    transition: .3s all;
+}
+#myBtn:hover {
+    background-color: #333; /* Add a dark-grey background on hover */
+}

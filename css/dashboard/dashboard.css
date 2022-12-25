@@ -1,0 +1,143 @@
+.main-btn {
+    background-color: #0060b1;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    transition: .3s;
+}
+.main-btn:focus,
+.main-btn:active,
+.main-btn:hover {
+    color: white;
+    background-color: #1678c8;
+    transition: .3s;
+    box-shadow: none;
+}
+
+.cancel-btn {
+    background-color: #f79418;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    transition: .3s;
+}
+.cancel-btn:focus,
+.cancel-btn:active,
+.cancel-btn:hover {
+    color: white;
+    background-color: #e79939;
+    transition: .3s;
+    box-shadow: none;
+}
+
+.erreur {
+    color: #ff536c;
+}
+/* __________________________________________________________________________________ */
+/*_____________________________background */
+.background{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.video-wrap{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}.video-wrap video{
+    min-width: 100%;
+    min-height: 100%;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #090a0f;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .7;
+}
+/*_____________________________background */
+
+/*_____________________________Main */
+main{
+    position: relative;
+    z-index: 1;
+    color: aliceblue;
+    height: 100vh;
+    overflow: scroll;
+}
+/*_______________________________________Links */
+    .links{
+        height: 100vh;
+        width: 20%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        overflow: hidden;
+    }
+    .links nav {
+        height: calc(100% - 56px);
+    }
+    .links ul {
+        margin: 0 auto;
+    }
+    .links ul li {
+        margin: 10px 0;
+        padding: 0 15px;
+        background-color: #d6d6d6;
+        transition: .3s;
+    }
+    .links ul li.active{
+        background-color: #ff3150;
+        border: none;
+    }
+    .links ul li:hover{
+        background-color: #ff3150;
+    }
+    .links ul li:hover a {
+        color: white;
+    }
+    .links ul li a {
+        color: #030303;
+    }
+    .links ul li.active a{
+        color: white;
+    }
+    .links ul li.active:hover{
+        background-color: #ff3150;
+    }
+/*_______________________________________Links */
+
+/*_______________________________________Content */
+    .content{
+        margin-left: 20%;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        width: calc(100% - 20%);
+    }
+    .formaulaire{
+        background-color: rgba(255, 255, 255, 0.826);
+        margin: 20px auto;
+        width: 90%;
+    }
+    .formaulaire img {
+        margin-left: 12px;
+    }
+    .card {
+        background-color: rgb(3 3 3 / 30%);
+    }
+/*_______________________________________Content */
+/*_____________________________Main */
+
+
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+    z-index: 1;
+	width: 100%;
+}
